@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #854798, #680E4B);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  overflow: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+h2 {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.form-div {
+  margin-bottom: 20px;
+}
+
+#user {
+  font-size: 18px;
+  background-color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  color: #680E4B
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  text-align: left;
+  color: #fff;
+}
+
+input {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button {
+  background-color: #680E4B;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  margin-top: 20px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #540b3d;
+  box-shadow: 0 5px 15px #540b3d;
+  transform: translateY(-3px);
+}
+
+#listToDo {
+  list-style-type: decimal;
+  margin: 0;
+  max-width: 600px;
+  margin: auto;
+}
+
+#listToDo li {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  position: relative;
+}
+
+#listToDo .btnLi {
+  display: flex;
+  gap: 10px;
+}
+
+#listToDo button {
+  margin: 0;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.error, .success {
+  padding: 4px;
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red
+}
+
+.success {
+  color: rgb(0, 173, 0)
+}
